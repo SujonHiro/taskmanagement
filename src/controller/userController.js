@@ -9,7 +9,7 @@ exports.register=async (req,res)=>{
        const result=await userModel.create(reqBody)
        res.status(200).json({status:"Success",data:result})
    }catch (err) {
-       res.status(400).json({status:"Fail",data:err})
+       res.status(200).json({status:"Fail",data:err})
    }
 
 }
