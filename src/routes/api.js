@@ -12,7 +12,7 @@ router.post("/profile-update",Authentication,UserController.profileUpdate)
 
 router.post("/createTask",Authentication,taskController.createTask)
 router.get("/deleteTask/:id",Authentication,taskController.deleteTask)
-router.post("/updateTask/:id/:status",Authentication,taskController.updateTask)
+router.get("/updateTask/:id/:status",Authentication,taskController.updateTask)
 router.get("/taskListByStatus/:status",Authentication,taskController.taskListByStatus)
 router.get("/taskStatusCount",Authentication,taskController.taskStatusCount)
 
