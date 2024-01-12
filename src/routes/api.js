@@ -9,6 +9,7 @@ const router=express.Router()
 router.post("/register",UserController.register)
 router.post("/login",UserController.login)
 router.post("/profile-update",Authentication,UserController.profileUpdate)
+router.get("/profile",Authentication,UserController.profileDetailsGet)
 
 router.post("/createTask",Authentication,taskController.createTask)
 router.get("/deleteTask/:id",Authentication,taskController.deleteTask)
